@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position practice</title>
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="headering">Register</h1>
+      <p class="text">Create your accoun. It's free and only takes a minute</p>
+      <form class="form" action="#" method="get">
+        <input
+          type="text"
+          class="input w-50"
+          placeholder="First Name"
+          name="UserFirstName"
+          required
+          autofocus
+          pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input
+          type="text"
+          class="input w-50"
+          placeholder="Last Name"
+          name="UserLastName"
+          required
+          pattern="^[a-z0-9_-]{3,15}$"
+        />
+        <input
+          type="email"
+          class="input w-100"
+          placeholder="Email"
+          name="UserEmail"
+          required
+          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+        />
+        <input
+          type="password"
+          class="input w-100"
+          placeholder="Password"
+          name="UserPassword"
+          required
+          autocomplete="new-password"
+          pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+        />
+        <input
+          type="password"
+          class="input w-100"
+          placeholder="Confirm Password"
+          required
+          pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+        />
+        <label for="check"
+          ><input id="check" type="checkbox" name="UserAccept" required /> I
+          accept the <a href="#" class="link">Terms of Use</a> &
+          <a href="#" class="link">Privacy Police</a></label
+        >
+        <button type="submit" class="button w-100">Register Now</button>
+      </form>
+    </section>
+  </body>
+</html>
