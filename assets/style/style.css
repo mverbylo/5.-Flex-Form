@@ -8,7 +8,7 @@ body {
 }
 .section {
   margin: 0 auto;
-  width: 370px;
+  width: 400px;
   border: 1px solid var(--greycolor);
   background-color: rgb(236, 236, 236);
   padding: 20px;
@@ -21,6 +21,7 @@ body {
   font-size: 40px;
   text-align: center;
   overflow: hidden;
+  padding: 10px;
 }
 .headering::after,
 .headering::before {
@@ -43,7 +44,7 @@ body {
 .text {
   font-size: 15px;
   text-align: center;
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .form {
   display: flex;
@@ -52,6 +53,7 @@ body {
 }
 .input {
   display: inline-block;
+  width: 100%;
   margin: 10px 0 20px 0;
   height: 30px;
   border: 1px solid var(--greycolor);
@@ -59,15 +61,13 @@ body {
 .w-50 {
   width: 47%;
 }
-.w-100{
-  width: 100%;
-}
 .link {
   text-decoration: none;
   color: var(--greencolor);
 }
 .button {
   margin: 20px auto 0px auto;
+  width: 100%;
   background-color: var(--greencolor);
   border: 0px;
   border-radius: 3px;
@@ -80,4 +80,13 @@ body {
 }
 input:valid {
   border-color: var(--greencolor);
+}
+
+@media (max-width: 400px) {
+  .section {
+    width: 100%;
+  }
+  .w-50 {
+    width: 100%;
+  }
 }
